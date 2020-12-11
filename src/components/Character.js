@@ -13,13 +13,13 @@ const Cards = (props) => {
             {data.map((character) => {
                 return (
                     <Card>
+                        <Img src = {character.image}></Img>
                         <h2>Name: {character.name} </h2>
                         <h3>Gender: {character.gender}</h3>
                         <h3>Status: {character.status} </h3>
                         <h3>Species: {character.species}</h3>
-                        <h3>Type: {character.type}</h3>
-
-                        <Img src = {character.image}></Img>
+                        
+              
                     </Card>
                 );
             })}
@@ -35,28 +35,23 @@ align-items: center;
 `;
 
 const Card = styled.div`
-background: lavender;
-border: 2px solid red;
-border-radius:15%;
+background: gray;
+border: 2px solid black;
 width:20%;
 margin: 20px 0;
-padding: 3px;
+padding: 4px;
 box-shadow: 5px 5px 20px black;
-color: plum;
+color: black;
 :hover{
     transition: all 0.25s ease-in-out;
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2);
 }
 `;
 
 const Img = styled.img`
-border:2px solid hotpink;
-border-radius: 40%;
+border:2px solid black;
+border-radius: 100%;
 max-width: 70%;
-:hover{
-    transition: all 0.25s ease-in-out;
-    transform: scale(0.7) rotate(-10deg);
-}
 `;
 
 export default Cards;

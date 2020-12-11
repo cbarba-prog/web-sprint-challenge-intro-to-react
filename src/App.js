@@ -39,13 +39,8 @@ const App = () => {
 
 const AppDiv = styled.div`
 h1 {
-  color: #003399;
+  color: black;
   transition: all 0.25s ease-in-out;
-:hover {
-  color: #CC0066;
-  transition: all 0.25s ease-in-out;
-  transform: scale(2) rotate(-7deg);
-}
 }
 `;
 
